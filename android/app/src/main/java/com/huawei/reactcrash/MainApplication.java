@@ -28,6 +28,9 @@ public class MainApplication extends Application implements ReactApplication {
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
+
+            packages.add(new ActivityStarterReactPackage());
+
           return packages;
         }
 
@@ -48,10 +51,12 @@ public class MainApplication extends Application implements ReactApplication {
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
 
+      //Enable crash data reporting
+      AGConnectCrash.getInstance().enableCrashCollection(true);
+
     //Test trigger a crash
-    AGConnectCrash.getInstance().testIt(this);
-    //Enable crash data reporting
-    AGConnectCrash.getInstance().enableCrashCollection(true);
+    //AGConnectCrash.getInstance().testIt(this);
+
   }
 
 

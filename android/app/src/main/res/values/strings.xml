@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ReactCrash</string>
+    <string name="test_btn">Test crash</string>
 </resources>

@@ -21,7 +21,7 @@ public class MainActivity extends ReactActivity {
     super.onCreate(savedInstanceState);
 
     //Test trigger a crash
-    AGConnectCrash.getInstance().testIt(this);
+   // AGConnectCrash.getInstance().testIt(this);
 
   }
 }
