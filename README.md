@@ -7,13 +7,13 @@ AppGallery Connect Crash provides lightweight crash analysis service and enables
 
 Install libs in react native
 
-    ```javascript
-npm install
-```
+    ```
+    npm install
+    ```
 
 then run the app
 
-    ```javascript
-npx react-native run-android
-```
+    ```
+    npx react-native run-android
+    ```
 
