@@ -26,9 +26,9 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
           @SuppressWarnings("UnnecessaryLocalVariable")
           List<ReactPackage> packages = new PackageList(this).getPackages();
-          // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
 
+            // Add ActivityStarterReactPackage
             packages.add(new ActivityStarterReactPackage());
 
           return packages;
@@ -54,8 +54,6 @@ public class MainApplication extends Application implements ReactApplication {
       //Enable crash data reporting
       AGConnectCrash.getInstance().enableCrashCollection(true);
 
-    //Test trigger a crash
-    //AGConnectCrash.getInstance().testIt(this);
 
   }
 

@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {Component} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -26,8 +26,27 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App: () => React$Node = () => {
-  return (
+
+const styles = StyleSheet.create({
+  scrollView: {
+    backgroundColor: Colors.lighter,
+  },
+  body: {
+    backgroundColor: Colors.white,
+    alignItems: 'center',
+    paddingVertical: 100 
+
+  },
+  text: {
+    marginBottom: 15
+  }
+  
+});
+
+export default class App extends Component { 
+
+  render() {
+    return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
@@ -54,20 +73,7 @@ const App: () => React$Node = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  body: {
-    backgroundColor: Colors.white,
-    alignItems: 'center',
-    paddingVertical: 100 
+}
 
-  },
-  text: {
-    marginBottom: 15
-  }
-  
-});
 
-export default App;
+
